@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import Paragraph from "./components/paragraph";
+import Heading from "./components/Heading";
+import UserInfo from "./components/UserInfo";
 
 export default function App() {
+  const [user, setUser] = useState({ name: "Hubert", age: 27 })
+
   return (
     <div>
-      <Paragraph />
+      <Heading />
+      <UserInfo user={user} />
     </div>
   )
 }
